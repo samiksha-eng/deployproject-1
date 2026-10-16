@@ -1,0 +1,31 @@
+model,latency_seconds,input_tokens,output_tokens,total_tokens,response,error
+gemini-3.5-flash-lite,3.196,58,360,418,"Welcome, future engineers! When writing code, things don't always go as planned. Sensors fail, files go missing, and users type letters instead of numbers. 
+
+### 1. Simple Definition
+**Exception handling** is a programming safety net. Instead of letting your program crash and burn when an error occurs, it allows your code to ""catch"" the error and decide what to do next.
+
+### 2. Practical Real-World Example
+Imagine you are writing a Python script to calculate the stress on a mechanical beam using the formula: $\text{Stress} = \text{Force} / \text{Area}$. 
+
+If a user accidentally inputs an **Area** of `0`, Python crashes with a `ZeroDivisionError`. As engineers, we want our software to be robust, not fragile. Here is how we handle it using `try` and `except`:
+
+```python
+force = 500.0
+
+try:
+  area = float(input(""Enter beam area (m^2): ""))
+  stress = force / area
+  print(f""Calculated Stress: {stress} Pascals"")
+
+except ZeroDivisionError:
+  print(""Error: Area cannot be zero! Please enter a valid measurement."")
+
+except ValueError:
+  print(""Error: Please enter a numerical value, not text."")
+```
+If the user enters `0` or `""hello""`, the program prints a helpful warning instead of crashing.
+
+### 3. Summary
+In short, exception handling uses **`try`** blocks to test risky code (like user inputs or hardware reads) and **`except`** blocks to manage errors gracefully. It keeps your engineering applications running smoothly and safely when the unexpected happens.",
+gemini-3.6-flash,,,,,,"503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+gemini-3.1-flash-lite,,,,,,"429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Resource has been exhausted (e.g. check quota).', 'status': 'RESOURCE_EXHAUSTED'}}"
